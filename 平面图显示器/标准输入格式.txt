@@ -1,0 +1,3 @@
+N M 表示N个点 M 条边
+Xi Yi
+Ai Bi
