@@ -1,0 +1,4 @@
+EXPORTS
+    _Z10hash_clearv @1
+    _Z11hash_insertPc @2
+    _Z9hash_findPc @3

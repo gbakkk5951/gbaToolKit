@@ -1,0 +1,14 @@
+int main(){}
+using namespace std;
+#include<cstdio>
+#include<cstring>
+
+
+struct _Main{
+	
+	
+	
+}exgcd;
+
+
+

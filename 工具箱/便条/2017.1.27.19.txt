@@ -1,0 +1,4 @@
+Objective1:单调队列
+Objective2:稀疏表ST
+Objective3:RMQ
+Objective4:股票趋势

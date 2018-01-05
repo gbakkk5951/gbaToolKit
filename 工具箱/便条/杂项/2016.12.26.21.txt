@@ -1,0 +1,21 @@
+Agri-Net
+
+Farmer John has been elected mayor of his town! One of his campaignpromises was to bring internet connectivity to all farms in the area.He needs your help, of course. 
+
+Farmer John ordered a high speed connection for his farm and is goingto share his connectivity with the other farmers. To minimize cost, hewants to lay the minimum amount of optical fiber to connect his farm toall the other farms. 
+
+Given a list of how much fiber it takes to connect each pair of farms,you must find the minimum amount of fiber needed to connect them alltogether. Each farm must connect to some other farm such that a packetcan flow from any one farm to any other farm. 
+
+The distance between any two farms will not exceed 100,000. 
+
+PROGRAM NAME: agrinet
+
+
+INPUT FORMAT
+Line 1: The number of farms, N (3 <= N <= 100).
+Line 2..end: The subsequent lines contain the N x N connectivitymatrix, where each element shows the distance from on farm to another.Logically, they are N lines of N space-separated integers. Physically,they are limited in length to 80 characters, so some lines continueonto others. Of course, the diagonal will be 0, since the distance fromfarm i to itself is not interesting for this problem.
+
+Êä³öÃèÊö Output Description
+
+OUTPUT FORMAT
+The single output contains the integer length that is the sum of theminimum length of fiber required to connect the entire set of farms.

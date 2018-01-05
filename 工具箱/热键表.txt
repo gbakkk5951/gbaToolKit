@@ -1,0 +1,18 @@
+显示、隐藏=alt+1
+截图 alt+q{
+enter 直接保存
+ctrl+enter选择保存
+alt+enter 图窗
+}
+便条（alt+2）{
+ctrl+s保存
+ctrl+enter 另存为
+ctrl+b背景颜色
+ctrl+r字体选择
+ctrl+滚轮 缩放字体
+Scroll Lock或F11滚动条出现\隐藏
+}
+退出ctrl+del
+设置保护窗口ctrl+小键盘减号
+保护ctrl+小键盘加号
+Alt+C 命令行

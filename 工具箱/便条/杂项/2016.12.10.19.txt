@@ -1,0 +1,1 @@
+Ì×½Ó×Ö socket(int af,int type,int protocol)

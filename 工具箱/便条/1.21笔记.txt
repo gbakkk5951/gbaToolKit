@@ -1,0 +1,4 @@
+hash值用unsigned可能被特殊字符串卡掉
+多构造hash 取不同p 
+x%p1,x%p2 p1和p2互质
+相当于x%(p1*p2)

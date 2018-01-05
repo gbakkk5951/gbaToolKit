@@ -1,0 +1,5 @@
+EXPORTS
+    _Z10hash_clearPc @1
+    _Z11hash_insertPcS_ @2
+    _Z8is_primex @3
+    _Z9hash_findPcS_ @4

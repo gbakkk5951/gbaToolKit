@@ -1,0 +1,17 @@
+rem 英文
+chcp 437
+
+rem 日文
+chcp 932
+
+rem 简体中文
+chcp 936
+
+rem 韩文
+chcp 949
+
+rem 繁体中文
+chcp 950
+
+rem utf-8
+chcp 65001

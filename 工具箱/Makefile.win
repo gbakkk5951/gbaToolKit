@@ -1,0 +1,30 @@
+# Project: 项目1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = G:/@新程序集/工具箱/gbadll/gbadll.o
+LINKOBJ  = G:/@新程序集/工具箱/gbadll/gbadll.o
+LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
+INCS     = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = gbadll.dll
+CXXFLAGS = $(CXXINCS) -m32 -Wall -DBUILDING_DLL=1
+CFLAGS   = $(INCS) -m32 -Wall -DBUILDING_DLL=1
+RM       = rm.exe -f
+DEF      = libgbadll.def
+STATIC   = libgbadll.a
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN) $(DEF) $(STATIC)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) -shared $(LINKOBJ) -o $(BIN) $(LIBS) -Wl,--output-def,$(DEF),--out-implib,$(STATIC),--add-stdcall-alias
+
+G:/@新程序集/工具箱/gbadll/gbadll.o: G:/@新程序集/工具箱/gbadll/gbadll.cpp
+	$(CPP) -c G:/@新程序集/工具箱/gbadll/gbadll.cpp -o G:/@新程序集/工具箱/gbadll/gbadll.o $(CXXFLAGS)
