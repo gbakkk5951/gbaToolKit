@@ -50,12 +50,14 @@ int find(int beg){
 			}
 		}
 		if(r<0 || (source[r]!=')' && source[r]!=':') ){
-			if(r>=4 &&source.substr(r-3,r)=="else"){
+
+            if(r>=4 &&source.substr(r-3, 4)=="else"){
 				if(del[r-4] || (!isdigit(source[r-4]) && !isalpha(source[r-4]))){
 					return beg+1;
 				}
-			}else if(r>=5 &&source.substr(r-4,r)=="const" 
-				&&del[r-5] || (!isdigit(source[r-5]) && !isalpha(source[r-5]) &&source[r-5]!='_') ){
+			}else if(r>=5 && source.substr(r-4, 5)=="const" 
+				&& (del[r-5] || (!isdigit(source[r-5]) && !isalpha(source[r-5]) &&source[r-5]!='_')) ){
+				    
 				return beg+1;
 			}
 			continue;
